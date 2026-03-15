@@ -3,9 +3,6 @@ namespace Apllikasjon_1;
 using System;
 using System.Collections.Generic;
 
-
-
-
 public class Program
 {
     private static List<Student> studenter = new List<Student>();
@@ -13,7 +10,9 @@ public class Program
     private static List<Kurs> kursListe = new List<Kurs>();
     private static List<Bok> bøker = new List<Bok>();
     private static List<Lån> låneListe = new List<Lån>();
-
+    
+    
+    
     public static void Main()
     {
         LagTestData();
@@ -33,10 +32,11 @@ public class Program
             Console.WriteLine("[10] Vis aktive lån");
             Console.WriteLine("[11] Vis lånehistorikk");
             Console.WriteLine("[0] Avslutt");
-
+        
+            
             Console.Write("Valg: ");
             string valg = Console.ReadLine();
-
+          
             switch (valg)
             {
                 case "1":
@@ -118,6 +118,7 @@ public class Program
         Console.WriteLine("Kurs opprettet!");
     }
 
+ 
     static void MeldStudentTilKurs()
     {
         Console.Write("StudentID: ");
@@ -483,6 +484,7 @@ public class Program
         }
     }
 
+
     static void LagTestData()
     {
         Student s1 = new Student();
@@ -494,7 +496,15 @@ public class Program
         s2.StudentID = "5523";
         s2.Navn = "Hilde Hansen";
         s2.Epost = "HildHans@uia.no";
-
+        
+        Utvekslingstudent u1 = new Utvekslingstudent();
+        u1.StudentID = "9001";
+        u1.Navn = "Anna Müller";
+        u1.Epost = "anna@exchange.no";
+        u1.Hjemuniversitet = "University of Berlin";
+        u1.Land = "Tyskland";
+        
+        studenter.Add(u1);
         studenter.Add(s1);
         studenter.Add(s2);
 
@@ -531,5 +541,4 @@ public class Program
         bøker.Add(b2);
     }
 }
-
 
