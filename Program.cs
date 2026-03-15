@@ -499,8 +499,8 @@ public class Program
         
         Utvekslingstudent u1 = new Utvekslingstudent();
         u1.StudentID = "9001";
-        u1.Navn = "Anna Müller";
-        u1.Epost = "anna@exchange.no";
+        u1.Navn = "Fredrik Müller";
+        u1.Epost = "fredrik@UOB.Com";
         u1.Hjemuniversitet = "University of Berlin";
         u1.Land = "Tyskland";
         
