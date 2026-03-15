@@ -510,8 +510,8 @@ public class Program
 
         Ansatt a1 = new Ansatt();
         a1.AnsattID = "A24";
-        a1.Navn = "peter fram";
-        a1.Epost = "ola@uia.no";
+        a1.Navn = "Peter fram";
+        a1.Epost = "Petefram@Uia.no";
 
         ansatte.Add(a1);
 
