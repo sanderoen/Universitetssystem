@@ -1,3 +1,5 @@
+namespace Apllikasjon_1;
+
 public class Lån
 {
     public string BokID { get; set; }
@@ -12,3 +14,5 @@ public class Lån
 
         return $"{status} Bok:{BokID} Bruker:{BrukerID} {Låndato}";
     }
+
+}
