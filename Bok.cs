@@ -1,4 +1,5 @@
-namespace Apllikasjon_1;
+namespace Universitets_system_oppgave_2;
+
 
 public class Bok
 {
@@ -10,7 +11,6 @@ public class Bok
 
     public override string ToString()
     {
-        return $"{ID} {tittel} {Forfatter} {antalleksemplar}";
+        return $"{ID} {tittel} {Forfatter} {år} Antall:{antalleksemplar}";
     }
-   
 }
